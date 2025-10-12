@@ -1,45 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <div class="card">
-    <h1>titulo de la card</h1>
-    <ul>
-
-      <li>box model</li>
-      <li>Pseudoclases</li>
-      <li>Pseudoelementos</li>
-      <li>cascada</li>
-    </ul>
-  </div>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilos.css">
-  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-  <title>Pseudoclases</title>
+  <title>Document</title>
 </head>
 
 <body>
+  <button>rojo</button>
+  <nav>
+    <a href="#mensaje">ver mensaje</a>
+  </nav>
+  <div id="mensaje" class="oculto">
 
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident laborum mollitia sequi sint, harum omnis
+      nostrum suscipit eveniet repudiandae voluptate magnam similique tempora aspernatur non ex fugiat, iste nesciunt?
+    </p>
+  </div>
+  <div class="parrafo">
+    <p>primero</p>
+    <p>segundo</p>
+  </div>
   <div>
-    <form action="get">
+    <form>
       <input type="text" name="nombre" placeholder="nombre..." required>
-      <input type="text" name="apellido" placeholder="apellido..." required>
-      <input type="email" name="email" placeholder="email..." required>
-      <label for="termino">termino</label>
-      <input type="checkbox" id="termino" />
-      <button>
-        <i class='bxr  bx-mountain-view'></i>
-        ENVIAR
+      <input type="number" name="telefono" placeholder="telefono" required>
+      <input type="email" name="correo" placeholder="correo...." required>
 
-      </button>
     </form>
   </div>
-  <nav>
-    <a href="#objetivo" class="link">disparador</a>
-    <a href="#evento" class="link">retroceso</a>
-    <div class="box" id="objetivo"></div>
-  </nav>
 </body>
 
 </html>

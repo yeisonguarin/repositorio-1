@@ -1,102 +1,16 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+button:hover{
+  background-color: red;
 }
-nav a.link{
+.oculto{
+  display: none;
+
+}
+#mensaje:target{
   display: block;
 }
-form{
-  width: 450px;
-  background-color: rgb(103, 140, 176);
-  padding: 20px;
-}
-input{
-width: 100%;
-padding: 8px 6px ;
-border: 1px solid rgba(245, 151, 151);
-border-radius: 6px;
-outline: none;
-margin-bottom: 10px;
+.parrafo p:first-child{
+color: gold;
 }
 input:invalid{
-  border: 1px solid red;
-}
-input:valid{
-  border: 1px solid green;
-}
-input[type="checkbox"]{
-  display: inline;
-  width: auto;
-  margin-left: 20px;
-}
-label:hover{
-  cursor: pointer;
-}
-
-button:hover{
-  cursor: pointer;
-}
-form input,form button{
-  display: block;
-}
-a:hover{
-  background-color: rgb(113, 1, 1);
-}
-.evento{
-  display: block;
-}
-.box{
-  width: 250px;
-  height: 250px;
-  background-color: brown;
-  margin-top: 50px;
-  transition: all 0.5s;
-}
-#objetivo:target{
-  border-radius: 50px;
-  margin-left: 300px;
-  transition: all 0.5s;
-}
-form:has(#termino:checked){
-  background-color:red;
-}
-.card{
-  background-color: slateblue;
-  width: 450px;
-  margin: 0 auto;
-  padding: 20px;
-  color: #fff;
-  margin-top: 60px;
-  border-radius: 10px;
-  box-shadow: -4px 4px 10px rgb(0, 0, 0)0.5;
-}
-div.card h1 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-div.card li{
-  list-style: none;
-}
-div.card ul{
-  counter-reset:contador ;
-}
-div.card li::before{
-  content: counter(contador);
-  counter-increment: contador;
   background-color: green;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50px;
-  margin-top: 6px;
-}
-div.card h1::before, div.card h1::after{
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
 }
