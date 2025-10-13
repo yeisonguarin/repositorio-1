@@ -12,5 +12,16 @@ button:hover{
 color: gold;
 }
 input:invalid{
-  background-color: green;
+  background-color: rgb(209, 238, 209);
+}
+
+input[type="email"] {
+  background-color: rgb(201, 18, 48);
+}
+
+input[type="number"]:focus {
+  
+  border: 2px solid blue;
+  outline: none;
+  
 }
