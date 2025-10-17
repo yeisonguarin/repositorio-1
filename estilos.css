@@ -35,6 +35,7 @@ section p:first-of-type {
   color: rgb(255, 0, 0);
   
 }
+
 :root {
   --color-titulo:darkgreen;
   --color-texto:darkblue;
@@ -63,11 +64,20 @@ nav a:hover{
   color: darkmagenta;
 }
 .icono::before{
-    content: "\ea0a";
+    content: "\f101";
   
     font-family: 'boxicons';
     font-weight: normal;
     display: inline-block;
     margin-right: 8px;
     color: rgb(70, 21, 169);
+}
+div section.linea1 p::after {
+    content: "";
+    display: block;
+    width: 39%;
+    height: 2px;
+    background-color: #0077cc;
+    margin-top: 6px;
+    
 }
