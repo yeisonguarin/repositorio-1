@@ -186,7 +186,7 @@ div section.linea1 p::after {
 .caja {
   width: 200px;
   height: 200px;
-  background-color: steelblue; /* Cambia para cada caja */
+  background-color: steelblue;
   position: static;
   top: 100px;
   left: 100px;
@@ -201,20 +201,134 @@ div section.linea1 p::after {
   
 }
 
+.barra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px; 
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
+}
+
+.barra a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px; 
+  font-weight: bold;
+  padding: 15px 40px; 
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.barra a:hover {
+  background-color: #555; 
+  transform: scale(1.05); 
+}
+ 
 
 .caja1 {
-  background-color: steelblue;
+  background-color: rgb(165, 212, 22);
   
-  z-index: 1; /* aparece abajo */
+  z-index: 1; 
 }
 
 .caja2 {
-  background-color: crimson;
+  background-color: rgb(127, 20, 220);
   
   left: 130px;
-  z-index: 2; /* aparece arriba */
+  z-index: 2; 
+}
+body
+{
+  padding-top: 80px;
+  
+}
+.card-medio {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
+:root {
+  --color-primario: #007bff;
+}
+
+
+.variable p {
+  color: var(--color-primario);
+}
+:root{
+  --color-fondo: #000000; 
+}
+
+.tema {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 20px;
+    background-color: var(--color-fondo);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(229, 1, 1, 0.15);
+    font-family: sans-serif;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.valor {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  padding: 20px;
+  background-color: var(--color-fondo, red);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+.card {
+  /* 🎯 Variables locales (solo afectan a los hijos de .card) */
+  --color-fondo: #ffffff;
+  --color-texto: #333;
+  --color-boton: #3498db;
+
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+.card button {
+  background-color: var(--color-boton);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
   
