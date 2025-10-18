@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilos.css">
 <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-  <title>Document</title>
+  <title>actividad.c</title>
 </head>
 
 <body>
   <h2>1. Crea un botón que cambie de color cuando esté en estado :hover.</h2>
-  <button>rojo</button>
+  <button class="rojo">rojo</button>
   <nav>
     <h2>2. Usa :target para mostrar un mensaje oculto al hacer clic en un enlace.</h2>
     <a href="#mensaje">ver mensaje</a>
@@ -60,7 +60,7 @@
 </div>
 <h2>8. Aplica estilo solo al primer párrafo de una sección con :first-of-type.</h2>
 <div>
-    <section>
+    <section class="afec">
     <p>este es el afectado</p>
     <p>segundo</p>
     <p>tercero</p>
@@ -98,6 +98,34 @@ sobre cada link.</h2>
         <p>tercer parrafo</p>
     </section>
 </div>
+<h2>13.Crea un botón con un efecto de sombra usando ::after</h2>
+<div>
+    <button class="sombra">enviar</button>
+</div>
+<h2>14.Añade comillas antes y después de un bloque de cita.</h2>
+  <div>
+    <p class="comilla">como es como seria</p>
+  </div>
+  <h2>15.Diseña un input que tenga un ícono dentro usando ::before.</h2>
+    <div class="ico">
+        <input type="text" placeholder="nombre">
+    </div>
+    <h2>16.Coloca una imagen de forma relative y mueve su posición sin alterar el flujo.</h2>
+    <div class="contenedor">
+        <img src="naturaleza.jpg" alt="" class="tarjet">
+        <p>este texto no se movera</p>
+    </div>
+    <h2>17.Crea una tarjeta que contenga un botón de eliminar con absolute</h2>
+    <div class="tarjeta">
+        <button class="tarjet">X</button>
+        <h3>invitacion</h3>
+    </div>
+    <h2>19.Apila dos cajas usando z-index para controlar qué caja aparece arriba, cada caja
+debe tener un color de fondo diferente.</h2>
+<div class="caja1">Caja 1 (abajo)</div>
+  <div class="caja2">Caja 2 (arriba)</div>
+
+      
 </body>
 
 </html> 
